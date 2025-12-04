@@ -1,15 +1,26 @@
 <html>
-<head>
-    <title>Function Declaration</title>
-</head>
-<body>
-    <center>
-        <h1 style="color:red">Minecraft Story Mode</h1>
-        <h3>Function Declaration</h3>
+    <body>
+        <h1>Only One at a time</h1>
+    <button onclick="coolnumber(6)">Calculate 6 x 7</button>
+    <script>
+        function coolnumber(x, y) {
+            if (y === undefined) {
+                y = 7;
+            }
+            document.write(x * y);
+        }
+    </script>
+        <button type="button" onclick="myFunction()">Mystery Multiplication</button>
+        <p id="demo"></p>
+        <p id="demo1"></p>
         <script>
-            var result = function (a, b) {return a * b} ;
-            document.write(result(5,8));
+            var b = 5;
+            function myFunction() {
+                var a = 4;
+                document.getElementById("demo").innerHTML = b * a;
+            }
+            document.getElementById("demo1").innerHTML = a;
+            document.getElementById("demo1").innerHTML = b;
         </script>
-    </center>
-</body>
+    </body>
 </html>
